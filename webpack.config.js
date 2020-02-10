@@ -15,7 +15,7 @@ module.exports = {
     mode: 'development',
 //ENTRY
     entry: {
-        main: './src/page/index/app.js'
+        main: './src/blocks/page/index/app.js'
     },
 //OUT
     output: {
@@ -29,12 +29,12 @@ module.exports = {
         }),
         new HTMLWebpackPlugin({
             filename: 'index.html',
-            template: './src/page/index/index.pug'
+            template: './src/blocks/page/index/index.pug'
             
         }),
         new CleanWebpackPlugin(),
         new CopyWebpackPlugin([
-            { from: 'src/blocks/header/img', to: `img` },
+            { from: 'src/blocks/logo/img', to: `img` },
             { from: 'src/fonts', to: `fonts`}
         ]),
     ],

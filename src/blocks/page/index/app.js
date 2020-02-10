@@ -6,4 +6,4 @@ import './js/js-test2';
 // SCSS
 import './style.scss';
 //font
-import '../../fonts/fonts.scss';
+import '../../../fonts/fonts.scss';

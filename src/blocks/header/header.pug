@@ -1,16 +1,24 @@
-header
-    .header
-        .header__iner
-            .logo  
-                img(src="/src/blocks/header/img/logo.png" alt="logo")
+.header
+    .header__iner
+        .logo-position
+            include ../logo/logo.pug
+        .container   
             .nav         
-                ul.nav-menu
-                    li:a(.nav-menu__link href="#") Home
-                    li:a(.nav-menu__link href="#") About Us
-                    li:a(.nav-menu__link href="#") Services
-                    li:a(.nav-menu__link href="#") Careers
-                    li:a(.nav-menu__link href="#") News
-                    li:a(.nav-menu__link href="#") Documentation
+                ul.nav__menu
+                    li.nav__item
+                        a(class='nav__link' href="#") Home
+                    li.nav__item
+                        a(class='nav__link' href="#") About Us
+                    li.nav__item
+                        a(class='nav__link' href="#") Services
+                    li.nav__item
+                        a(class='nav__link' href="#") Careers
+                    li.nav__item
+                        a(class='nav__link' href="#") News
+                    li.nav__item
+                        a(class='nav__link' href="#") Documentation            
+            .aunth
+                include ../button/button.pug
+                +button('login','79px','unfill')
+                +button('register','101px','fill')
                     
-                input(.nav__btn .nav__login type="button" name='Login' value='Login')
-                input(.nav__btn .nav__registration type="button" name='Login' value='Registration') 

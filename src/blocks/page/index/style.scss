@@ -1,0 +1,19 @@
+$bg-color:lightgray;
+$text-color: rgba(31, 32, 65, 0.5);
+@import '../../header/header.scss';
+@import "../../logo/logo.scss";
+@import "../../button/button.scss";
+
+
+body {
+    background: $bg-color;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: $text-color;
+    margin: 150px 0 0 0;
+
+}
+

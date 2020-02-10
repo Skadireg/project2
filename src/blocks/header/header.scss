@@ -1,15 +1,61 @@
 $primary-color: #333;
+$text-color: rgba(31, 32, 65, 0.5);
+$bg-main: #FFFFFF;
 
-
-.header__iner {
-    background-color: darkcyan;
-    box-sizing: border-box;
+.header {
+    background-color: $bg-main;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    line-height: 17px;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+}
+
+.header__iner {
+    margin: 0 auto;
+    width: 80%;
     height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
 
+.nav__link {
+    text-decoration: none;
+    color: $text-color;
+    &:active {
+        font-weight: bold;
+        color: rgba(31, 32, 65, 0.75);
+    }
+}
+
+.nav__menu {
+    margin: 0;
+    padding: 0;
+}
+
+.nav__item {
+    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+    margin: 26px 0 26px 30px;
+    &:first-child {
+        margin-left: 0px;
+    }
+}
+
+.logo-position {
+    margin: 15px 0 15px 0;
+}
+
+.btn-pos {
+    margin: 18px 20px 18px 0;
+    &:first-child {
+        margin-left: 30px;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
