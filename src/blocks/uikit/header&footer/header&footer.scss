@@ -1,0 +1,32 @@
+$bg-main: #FFFFFF; /* основный цвент на странице - белый*/
+$bg-between:#E5E5E5; /* цвет между страницами в uikit`е */
+$bg-second: #F4F4F6; /* второй цвет на странице ( когда нет никакого цвета)  */
+$text-color: rgba(31, 32, 65, 0.5);
+@import '../../header/header.scss';
+@import "../../logo/logo.scss";
+@import "../../button/button.scss";
+
+
+body {
+    background: $bg-between;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: $text-color;
+    margin: 0; 
+}
+
+.content {
+    background-color: $bg-main;
+    padding: 0;
+    box-sizing: border-box;
+    height: 900px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.container {
+    padding-top: 150px;
+}

@@ -1,0 +1,195 @@
+$bg-main: #FFFFFF; /* основный цвент на странице - белый*/
+$bg-between:#E5E5E5; /* цвет между страницами в uikit`е */
+$bg-second: #F4F4F6; /* второй цвет на странице ( когда нет никакого цвета)  */
+$text-color: rgba(31, 32, 65, 0.5);
+@import '../../header/header.scss';
+@import "../../logo/logo.scss";
+@import "../../button/button.scss";
+
+
+body {
+    background: $bg-between;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: $text-color;
+    margin: 0; 
+}
+
+.mark {
+    position: absolute;
+    top: 30px;
+    left: 30px; 
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #1F2041;
+    margin-top: 0px;
+}
+
+.textbar__text h2,
+.textbar__text h3,
+.textbar__text p {
+    margin-top: 50px;
+}
+
+
+h2 {
+    margin: 0;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 24px;
+    color: #1F2041; 
+}
+
+h3 {
+    margin: 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1F2041;
+}
+
+.content {
+    background-color: $bg-main;
+    padding: 0;
+    box-sizing: border-box;
+    height: 900px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.content__iner {
+    margin: 0 auto;
+    width: 76%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content__iner-margin {
+    padding-top: 145px;
+    height: 610px;
+}
+
+.colorbar__box {
+    display: flex;
+	align-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin-bottom: 20px;
+    vertical-align: middle;
+}
+
+
+.textbar {
+    display: flex;
+	align-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 403px;  
+}
+
+.colorbar__item {
+    width: 70px;
+    height: 70px;
+    background-color:rgba(31, 32, 65, 1);
+    border-radius: 6px;
+    list-style: none;
+    margin-top: 20px;
+    margin-right: 40px;
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+.colorbar__item {
+    background-color:rgba(31, 32, 65, 1);
+}
+
+
+.colorbar__item-purple {
+    background-color:#BC9CFF;
+}
+
+.colorbar__item-green {
+    background-color:#6FCF97;
+}
+.colorbar__text h2 {
+    text-transform: capitalize;
+}
+.colorbar__text {
+    margin: 0;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 29px;
+    color: #1F2041; 
+}
+
+.colorbar__text{
+    margin-top: 7px;
+    margin-bottom: 6px;
+}
+
+.textbar__textitem {
+    list-style: none;
+    margin-bottom: 50px;
+    text-decoration: none;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+
+
+.textbar__labelitem {
+    color: rgba(31, 32, 65, 0.25);
+    text-align: left;
+    margin-right: 30px;
+    &:first-child{
+        font-size: 24px;
+        line-height: 29px;
+        margin-top: 0;
+    }
+    &:nth-child(2){
+        font-size: 19px;
+        line-height: 23px;
+        margin-top: 80px;
+    }
+    &:nth-child(3){
+        font-size: 12px;
+        line-height: 15px;
+        margin-top: 74px;
+    }
+    &:last-child{
+        font-size: 14px;
+        line-height: 24px;
+        margin-top: 50px;
+    }
+}
+
+.contentHeaderFooter {
+    background-color: $bg-second;
+    padding: 0;
+    box-sizing: border-box;
+    height: 900px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.header-pos {
+    padding-top: 150px;
+}

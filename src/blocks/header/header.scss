@@ -13,7 +13,7 @@ $bg-main: #FFFFFF;
 
 .header__iner {
     margin: 0 auto;
-    width: 80%;
+    width: 80.5%;
     height: 70px;
     display: flex;
     justify-content: space-between;
@@ -27,6 +27,7 @@ $bg-main: #FFFFFF;
         font-weight: bold;
         color: rgba(31, 32, 65, 0.75);
     }
+    cursor: pointer;
 }
 
 .nav__menu {
@@ -55,7 +56,8 @@ $bg-main: #FFFFFF;
     }
 }
 
-.container {
+.nav_aunth_box {
     display: flex;
     justify-content: space-between;
 }
+

@@ -1,0 +1,23 @@
+
+
+//* COLORBAR PALLETE MIXINS FOR UIKIT
+mixin colorbar(colorName, shade='1')
+    .colorbar__box
+        if colorName == 'black'
+            .colorbar__item(style="background-color: rgba(31, 32, 65, "+ shade +")")
+            .colorbar__text
+                -var procentShade = shade * 100 
+                h2
+                    | Dark Shade #{procentShade+'%'}
+                span
+                    | #1F2041
+        else    
+            div(class='colorbar__item colorbar__item-'+colorName)
+            .colorbar__text
+                h2= colorName
+                span 
+                if colorName == 'green'
+                    | #6FCF97
+                else     
+                    | #BC9CFF
+                

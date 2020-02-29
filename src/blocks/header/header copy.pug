@@ -1,0 +1,21 @@
+.header
+    .header__iner
+        .logo-position
+            include ../logo/logo.pug
+        .nav_aunth_box  
+            .nav         
+                ul.nav__menu
+                    li.nav__item
+                        a(class='nav__link' href=link1) value1
+                    li.nav__item
+                        a(class='nav__link' href=link2) value2
+                    li.nav__item
+                        a(class='nav__link' href=link3) value3
+                    li.nav__item
+                        a(class='nav__link' href=link4) value4
+                    li.nav__item
+                        a(class='nav__link' href=link5) value5           
+            .aunth
+                include ../button/button.pug
+                +button("btn1",'79px','unfill',linkbtn_1)
+                +button("btn2",'101px','fill',linkbtn_2)

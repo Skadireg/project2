@@ -2,23 +2,13 @@
     .header__iner
         .logo-position
             include ../logo/logo.pug
-        .container   
+        .nav_aunth_box  
             .nav         
                 ul.nav__menu
-                    li.nav__item
-                        a(class='nav__link' href="#") Home
-                    li.nav__item
-                        a(class='nav__link' href="#") About Us
-                    li.nav__item
-                        a(class='nav__link' href="#") Services
-                    li.nav__item
-                        a(class='nav__link' href="#") Careers
-                    li.nav__item
-                        a(class='nav__link' href="#") News
-                    li.nav__item
-                        a(class='nav__link' href="#") Documentation            
+                    each link, name in {'Главная' : '#', 'О компании' : '#', 'Услуги' : '#', 'Каталог' : '#', 'Контакты' : '#'}
+                        li.nav__item
+                            a(class='nav__link' href= "/" + link + ".html")= name         
             .aunth
                 include ../button/button.pug
-                +button('login','79px','unfill')
-                +button('register','101px','fill')
-                    
+                +button("btn1 ",'79px','unfill',linkbtn_1)
+                +button("btn2 ",'101px','fill',linkbtn_2)

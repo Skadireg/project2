@@ -1,3 +1,5 @@
+/* Montserrat bold */
+
 @font-face {
 	font-family: 'Montserrat';
 	src: url('/fonts/Montserrat-Bold.eot');
@@ -7,6 +9,8 @@
 	font-weight: 700;
 	font-style: normal;
 }
+
+/* Montserrat regular */
 
 @font-face {
 	font-family: 'Montserrat';
@@ -18,13 +22,16 @@
 	font-style: normal;
 }
 
+/* quicksand bold*/
 @font-face {
 	font-family: 'Quicksand';
-	src: url('/fonts/Quicksand-Bold.eot');
-	src: url('/fonts/Quicksand-Bold.woff') format('woff'), 
-		url('/fonts/Quicksand-Bold.ttf') format('truetype'), 
-		url('/fonts/Quicksand-Bold.svg') format('svg');
-	font-weight: 700;
 	font-style: normal;
-}
-
+	font-weight: 700;
+	src: url('/fonts/quicksand-v20-latin-700.eot');
+	src: local(''),
+		 url('/fonts/quicksand-v20-latin-700.eot?#iefix') format('embedded-opentype'), 
+		 url('/fonts/quicksand-v20-latin-700.woff2') format('woff2'), 
+		 url('/fonts/quicksand-v20-latin-700.woff') format('woff'), 
+		 url('/fonts/quicksand-v20-latin-700.ttf') format('truetype'), 
+		 url('/fonts/quicksand-v20-latin-700.svg#Quicksand') format('svg'); 
+  }

@@ -10,12 +10,12 @@ const Paths = {
     dist: path.join(__dirname, "./dist"),
 }
 
-
 module.exports = {
     mode: 'development',
 //ENTRY
     entry: {
-        main: './src/blocks/page/index/app.js'
+        main: Paths.src + '/blocks/page/index/index.js',
+        uikit: Paths.src+ '/blocks/uikit/colorbar&type/colorbar&type.js'
     },
 //OUT
     output: {
@@ -29,12 +29,24 @@ module.exports = {
         }),
         new HTMLWebpackPlugin({
             filename: 'index.html',
-            template: './src/blocks/page/index/index.pug'
-            
+            template: './src/blocks/page/index/index.pug'    
+        }),
+        new HTMLWebpackPlugin({
+            filename: 'colorbar&type.html',
+            template: './src/blocks/uikit/colorbar&type/colorbar&type.pug'
+        }),
+        new HTMLWebpackPlugin({
+            filename: 'header&footer.html',
+            template: './src/blocks/uikit/header&footer/header&footer.pug'
+        }),
+        new HTMLWebpackPlugin({
+            filename: 'test.html',
+            template: './src/blocks/uikit/test/test.pug'
         }),
         new CleanWebpackPlugin(),
         new CopyWebpackPlugin([
-            { from: 'src/blocks/logo/img', to: `img` },
+            { from: 'src/blocks/logo/img', to: `img/page/` },
+            { from: 'src/layout/img', to: `img/kit/` },
             { from: 'src/fonts', to: `fonts`}
         ]),
     ],
